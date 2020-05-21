@@ -14,8 +14,8 @@ console.log("num == obj", num == obj); // true
 console.log("num == str", num == str); // true
 console.log("obj == str", obj == str); // true
 console.log("null == undefined", null == undefined); // true
-console.log("obj == null", obj == null);
-console.log("obj == undefined", obj == undefined);
+console.log("obj == null", obj == null); // false
+console.log("obj == undefined", obj == undefined); // false
 
 
 // ===
@@ -24,9 +24,9 @@ console.log("num === num", num === num); // true
 console.log("obj === obj", obj === obj); // true
 console.log("str === str", str === str); // true
 
-console.log("num === obj", num === obj); // true
-console.log("num === str", num === str); // true
-console.log("obj === str", obj === str); // true
+console.log("num === obj", num === obj); // false
+console.log("num === str", num === str); // false
+console.log("obj === str", obj === str); // false
 console.log("null === undefined", null === undefined); // true
 console.log("obj === null", obj === null); // false
 console.log("obj === undefined", obj === undefined); // false
