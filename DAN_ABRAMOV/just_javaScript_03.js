@@ -25,3 +25,36 @@ str = 'Le chat';
 console.log(str); // that's work because we work on the global variable string not on the elements of this one
 
 
+function double(x) {
+  x = x * 2;
+}
+
+let units = 10;
+double(units);
+console.log("units:",units); // ?
+units = 'huit';
+console.log("typeof units is", typeof units);
+
+let answer = true;
+console.log("typeof answer is", typeof answer);
+answer.opposite = false;
+console.log("typeof answer.opposite is", typeof answer.opposite);
+
+// null = 10;
+console.log("null:", null);
+
+
+let arr = ['puck', 'man'];
+feed(arr);
+console.log("arr[0] is: ", arr[0]);
+
+
+function feed(variable) {
+	variable[0] = 'F';
+}
+
+
+
+
+
+

@@ -1,3 +1,7 @@
+console.log({});
+
+console.log(function() {});
+
 function direBonjour(prenom) {
   const message = `Bonjour, ${prenom} !`;
   return message;
