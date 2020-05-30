@@ -33,7 +33,13 @@ for (let i = 0; i < 7; i++) {
 	console.log({});
 }
 
+console.log("here we call the function");
+let func = function() { return 7; };
 for (let i = 0; i < 7; i++) {
-	console.log(function() {});
+	console.log("console.log(func) 7 times",func);
 }
 
+console.log("here we call the result of function");
+for (let i = 0; i < 7; i++) {
+	console.log("console.log(func()) 7 times",func());
+}
