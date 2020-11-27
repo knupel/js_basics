@@ -67,9 +67,6 @@ function hsl_to_rgb(h, s, l) {
 
 function hsb_to_rgb(h, s, v) {
   let r, g, b, i, f, p, q, t;
-  if (arguments.length === 1) {
-    (s = h.s), (v = h.v), (h = h.h);
-  }
   i = Math.floor(h * 6);
   f = h * 6 - i;
   p = v * (1 - s);
