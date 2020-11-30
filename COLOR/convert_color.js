@@ -1,6 +1,6 @@
 // https://stackoverflow.com/questions/36721830/convert-hsl-to-rgb-and-hex
 // https://stackoverflow.com/questions/17242144/javascript-convert-hsb-hsv-color-to-rgb-accurately
-
+// // https://github.com/GMchris/CoffeeColors
 console.log("convert color hsl_to_rgb(0, 1, 1):", hsl_to_rgb(0, 1, 1));
 console.log("convert color hsl_to_hex(0, 1, 1):", hsl_to_hex(0, 1, 1));
 
@@ -72,6 +72,12 @@ function hsb_to_rgb(h, s, v) {
   p = v * (1 - s);
   q = v * (1 - f * s);
   t = v * (1 - (1 - f) * s);
+  // this part is not React compatible, need to format the case like that
+  // case 0:
+  //     r = v
+  //     g = t
+  //     b = p
+  //     break
   switch (i % 6) {
     case 0:
       (r = v), (g = t), (b = p);
