@@ -1,0 +1,75 @@
+body {
+  background-color: magenta;
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  margin-top: 30px;
+  width: 396px;
+  height: 396px;
+  border: solid white 8px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid div {
+  width: 20px;
+  height: 20px;
+  border: solid white 0.5px;
+}
+
+/* .wall {
+  background-color: blue;
+}
+
+.ghost {
+  background-color: orange;
+}
+
+.pacman {
+  background-color: yellow;
+}
+
+.pac-dot {
+  border: 5px solid magenta;
+  background-color: white;
+  box-sizing: border-box;
+} */
+
+.wall {
+  background-color: #6eb5ff;
+}
+
+.power-pellet {
+  background-color: #ffabab;
+  border-radius: 10px;
+}
+
+.pac-dot {
+  background-color: white;
+  border: 5px solid #ffccf9;
+  box-sizing: border-box;
+}
+
+.pac-man {
+  background-color: yellow;
+  border-radius: 10px;
+}
+
+.inky {
+  background-color: cyan;
+}
+
+.blinky {
+  background-color: red;
+}
+
+.pinky {
+  background-color: pink;
+}
+
+.clyde {
+  background-color: orange;
+}
