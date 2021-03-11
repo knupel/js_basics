@@ -1,0 +1,76 @@
+/* body {
+  margin: 0;
+} */
+
+.carousel {
+  max-width: 800px;
+  position: relative;
+}
+
+.carousel .carousel-item {
+  display: none;
+}
+
+/* .carousel .carousel-item-hidden {
+  display: absolute;
+  animation: fade_out 2s;
+} */
+
+.carousel .carousel-item-visible {
+  display: block;
+  animation: fade_in 2s;
+}
+
+.carousel .carousel-item img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+.carousel .carousel-actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  /* need do add offset vertical to put the button exatly to the middle of height
+  because with only top 50% the middle is calculate from the top button, not from the middle of it. */
+  transform: translateY(-50%);
+}
+
+.carousel .carousel-actions button {
+  border-radius: 50px;
+  background-color: white;
+  border: 0;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.carousel .carousel-actions button#carousel-button-prev {
+  margin-left: 20px;
+}
+
+.carousel .carousel-actions button#carousel-button-next {
+  margin-right: 20px;
+}
+
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* @keyframes fade_out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+} */
