@@ -11,12 +11,30 @@ function render_emoji() {
   }
 }
 
-function add() {
+function add_end() {
+  add(true);
+}
+
+function add_begin() {
+  add(false);
+}
+
+function remove_end() {
+  remove(true);
+}
+
+function remove_begin() {
+  remove(false);
+}
+
+function add(at_the_end_is) {
   const temp = document.createElement("span");
   let emo_char = document.getElementById("emoji-input");
   if (emo_char) {
     temp.textContent = emo_char.value;
-    emoji_container.append(temp);
+    if (at_the_end_is) emoji_container.append(temp);
+    else emoji_container.prepend(temp);
+    //
   }
   emo_char.value = "";
 
@@ -24,6 +42,20 @@ function add() {
   render_emoji();
 }
 
-let button = document.getElementById("push-btn");
+function remove(at_the_end_is) {
+  if (at_the_end_is) my_emojis.pop();
+  else my_emojis.shift();
+  // emojiContainer.innerHTML = "";
+  render_emoji();
+}
 
-button.addEventListener("click", add);
+let button_add_end = document.getElementById("push-btn");
+let button_add_begin = document.getElementById("unshift-btn");
+let button_remove_end = document.getElementById("pop-btn");
+let button_remove_begin = document.getElementById("shift-btn");
+
+button_add_end.addEventListener("click", add_end);
+button_add_begin.addEventListener("click", add_begin);
+
+button_remove_end.addEventListener("click", remove_end);
+button_remove_begin.addEventListener("click", remove_begin);
