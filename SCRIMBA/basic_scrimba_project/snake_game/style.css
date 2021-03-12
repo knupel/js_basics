@@ -5,6 +5,8 @@ body {
 }
 
 .grid {
+  display: flex;
+  flex-wrap: wrap;
   width: 200px;
   height: 200px;
   border: solid 1px black;
@@ -13,5 +15,10 @@ body {
 .grid div {
   width: 20px;
   height: 20px;
-  border: solid 1px black;
+  background: yellow;
+  border: solid 0px black;
+}
+
+.snake {
+  background: red;
 }
