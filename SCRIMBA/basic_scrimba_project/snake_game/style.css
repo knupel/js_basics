@@ -15,10 +15,14 @@ body {
 .grid div {
   width: 20px;
   height: 20px;
-  background: yellow;
+  /* background-color: yellow; */
   border: solid 0px black;
 }
 
 .snake {
-  background: red;
+  background-color: brown;
+}
+
+.apple {
+  background: yellowgreen;
 }
